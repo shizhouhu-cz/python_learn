@@ -38,6 +38,12 @@ class LLMClient:
             kwargs["tools"] = tools
             kwargs["tool_choice"] = "auto"
 
+        # 打印调用大模型时传递的 HTTP 请求详情
+        request_url = f"{self.client.base_url}chat/completions"
+        print("\n========== HTTP 请求详情 ==========")
+        print(f"请求体: {json.dumps(kwargs, ensure_ascii=False, indent=2)}")
+        print("====================================\n")
+
         response = self.client.chat.completions.create(**kwargs)
 
         return response.choices[0].message
