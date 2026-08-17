@@ -39,7 +39,6 @@ class LLMClient:
             kwargs["tool_choice"] = "auto"
 
         # 打印调用大模型时传递的 HTTP 请求详情
-        request_url = f"{self.client.base_url}chat/completions"
         print("\n========== HTTP 请求详情 ==========")
         print(f"请求体: {json.dumps(kwargs, ensure_ascii=False, indent=2)}")
         print("====================================\n")
@@ -115,7 +114,7 @@ class FunctionCallingReActAgent:
                     try:
                         observation = tool.run(**tool_args)
                     except Exception as e:  # noqa: BLE001
-                        observation = f"工具执行一场:{e}"
+                        observation = f"工具执行异常:{e}"
 
                 print(f"工具返回：{observation}")
 
