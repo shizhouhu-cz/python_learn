@@ -37,15 +37,15 @@ builder.add_edge("node_3", END)
 
 graph = builder.compile()
 
-# 🎨 可视化图结构
-from IPython.display import Image, display
+# # 🎨 可视化图结构
+# from IPython.display import Image, display
 
-display(Image(graph.get_graph().draw_mermaid_png()))
+# display(Image(graph.get_graph().draw_mermaid_png()))
 
-# 执行会报错！
-from langgraph.errors import InvalidUpdateError
+# # 执行会报错！
+# from langgraph.errors import InvalidUpdateError
 
-try:
-    graph.invoke({"foo": 1})
-except InvalidUpdateError as e:
-    print(f"InvalidUpdateError occurred: {e}")
+# try:
+#     graph.invoke({"foo": 1})
+# except InvalidUpdateError as e:
+#     print(f"InvalidUpdateError occurred: {e}")

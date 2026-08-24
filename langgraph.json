@@ -1,0 +1,7 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "calculator": "./langgraph_demo/breakpoint/simple_breakpoint.py:graph"
+  },
+  "env": ".env"
+}

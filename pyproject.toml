@@ -1,0 +1,11 @@
+[project]
+name = "python_for_beginner"
+version = "0.1.0"
+description = "LangGraph beginner project"
+requires-python = ">=3.10"
+dependencies = [
+    "langgraph>=0.2.0",
+]
+
+[tool.setuptools]
+packages = ["langgraph_demo"]
