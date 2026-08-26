@@ -1,0 +1,20 @@
+(('supervisor:ef786995-c13f-79aa-4d44-b8fb3ad9a31c',),
+{'model': {'messages': [AIMessage(content="I'll assign this research task to find the GDP data you need.", additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 184, 'prompt_tokens': 340, 'total_tokens': 524, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 83, 'rejected_prediction_tokens': None
+                    }, 'prompt_tokens_details': {'audio_tokens': None, 'cache_write_tokens': None, 'cached_tokens': 256
+                    }
+                }, 'model_provider': 'openai', 'model_name': 'glm-4.7', 'system_fingerprint': None, 'id': '20260826160730b6a7eb0ac14b4fd1', 'finish_reason': 'tool_calls', 'logprobs': None
+            }, name='supervisor', id='lc_run--01a03d1c-1aca-75f2-ae4c-da80f658730f-0', tool_calls=[
+                {'name': 'transfer_to_research_agent', 'args': {'task_description': "Find the following economic data for 2024:\n1. US GDP (Gross Domestic Product) for the year 2024\n2. New York state GDP for the year 2024\n3. Calculate what percentage of US GDP was New York state's GDP in 2024\n\nPlease provide the specific GDP figures and the percentage calculation with sources."
+                    }, 'id': 'call_-7314017490462306108', 'type': 'tool_call'
+                }
+            ], invalid_tool_calls=[], usage_metadata={'input_tokens': 340, 'output_tokens': 184, 'total_tokens': 524, 'input_token_details': {'cache_read': 256
+                }, 'output_token_details': {'reasoning': 83
+                }
+            })
+        ]
+    }
+})
+((),
+{'supervisor': None
+})
